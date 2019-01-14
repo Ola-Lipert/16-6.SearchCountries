@@ -1,0 +1,13 @@
+* { box-sizing: border-box; margin: 0 auto; }
+
+body { font-family: 'Quicksand', sans-serif; background-color: #c8d6e5; }
+
+.container { margin: 5%; text-align: center; }
+
+.container h1 { font-size: 40px; font-weight: bold; padding-bottom: 2%; }
+
+.container button, .container input { margin-bottom: 2%; }
+
+.container h2 { padding-left: 3%; }
+
+.container li { list-style-type: none; }

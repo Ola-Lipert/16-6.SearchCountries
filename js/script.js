@@ -20,8 +20,14 @@ function showCountriesList(resp) {
     countriesList.innerHTML = '';
 
     resp.forEach(function(item) {
+        console.log(item);
+        var ulEl = document.createElement('ul');
         var liEl = document.createElement('li');
-        liEl.innerText = item.name;
-        countriesList.appendChild(liEl);
+        var liEl1 = document.createElement('li');
+        liEl.innerHTML = item.name;
+        liEl1.innerHTML = item.capital;
+        countriesList.appendChild(ulEl);
+        ulEl.appendChild(liEl);
+        ulEl.appendChild(liEl1);
     });
 }
